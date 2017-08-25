@@ -2,17 +2,15 @@ resources:
 - name: SpringBootSimpleRest
   type: git
   source:
-    uri: https://github.com/dhaneshande/SpringBootConcoursePipeline.git
+    uri: https://github.com/dhaneshande/SpringBootConcoursePipelineWithVersioning.git
     branch: master
-- name: resource-deploy-web-app
-  type: cf
+- name: hello-world-docker-image
+  type: docker-image
   source:
-    api: {{cf-api}}
-    username: {{cf-username}}
-    password: {{cf-password}}
-    organization: {{cf-organization}}
-    space: {{cf-space}}
-    skip_cert_check: true
+    email: {{docker-hub-email}}
+    username: {{docker-hub-username}}
+    password: {{docker-hub-password}}
+    repository: {{docker-hub-image-hello-world}}
 
 jobs:
 - name: job-deploy-app
