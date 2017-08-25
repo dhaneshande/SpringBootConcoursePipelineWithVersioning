@@ -1,1 +1,1 @@
-# SpringBootConcoursePipelineWithVersioning
+# SpringBootConcoursePipeline
