@@ -24,4 +24,4 @@ jobs:
     file: SpringBootSimpleRest/ci/tag-files.yml
     params: {save: true}
   - put: hello-world-docker-image
-    params: {build: resource-tutorial/docker}
+    params: {build: SpringBootSimpleRest/docker}
