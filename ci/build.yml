@@ -23,5 +23,5 @@ run:
     ls -la
     cd ..
     chmod 777 target
-    cp -r /target /built-project
+    cp ./target/springbootsimplerest-0.0.1-SNAPSHOT.jar ../built-project/demo.jar
     ls -la
