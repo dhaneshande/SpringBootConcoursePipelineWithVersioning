@@ -1,8 +1,4 @@
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templatess
-# and open the template in the editor.
-
-FROM java
+FROM java:8
 EXPOSE 8080
-ADD /built-project/demo.jar demo.jar
-ENTRYPOINT ["java","-jar","demo.jar"]
+ADD /target/springbootsimplerest-0.0.1-SNAPSHOT.jar springbootsimplerest-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","springbootsimplerest-0.0.1-SNAPSHOT.jar"]
