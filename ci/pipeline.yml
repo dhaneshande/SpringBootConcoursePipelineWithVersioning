@@ -20,6 +20,8 @@ jobs:
   - task: build
     privileged: true
     file: SpringBootSimpleRest/ci/build.yml
+  - task: build-project
+    file: SpringBootSimpleRest/ci/tag-files.yml
     params: {save: true}
   - put: hello-world-docker-image
-    params: {build: SpringBootSimpleRest/docker}
+    params: {build: resource-tutorial/docker}
