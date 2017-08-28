@@ -2,7 +2,7 @@
 # To change this template file, choose Tools | Templatess
 # and open the template in the editor.
 
-FROM java:8
+FROM java
 EXPOSE 8080
 ADD /built-project/demo.jar demo.jar
 ENTRYPOINT ["java","-jar","demo.jar"]
