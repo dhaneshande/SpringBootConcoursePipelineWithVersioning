@@ -6,8 +6,8 @@ image_resource:
   source: {repository: concourse/bosh-cli}
 
 inputs:
-- name: resource-tutorial
-- name: some-files
+- name: SpringBootSimpleRest
+- name: built-project
 
 run:
   path: bash
@@ -18,5 +18,5 @@ run:
       ls -l
       pwd
       ls -R
-      cd resource-tutorial
-      echo "current package version:${PACKAGE_VERSION}"
+      cd SpringBootSimpleRest
+      ls -la
