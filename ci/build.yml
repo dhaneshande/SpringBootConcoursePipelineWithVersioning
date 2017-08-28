@@ -8,8 +8,8 @@ image_resource:
 inputs:
 - name: SpringBootSimpleRest
 
-outputs:
-- name: built-project
+#outputs:
+#- name: built-project
 
 run:
   path: sh
@@ -23,5 +23,5 @@ run:
     ls -la
     cd ..
     chmod 777 target
-    cp ./target/springbootsimplerest-0.0.1-SNAPSHOT.jar ../built-project/demo.jar
+    #cp ./target/springbootsimplerest-0.0.1-SNAPSHOT.jar ../built-project/demo.jar
     ls -la
