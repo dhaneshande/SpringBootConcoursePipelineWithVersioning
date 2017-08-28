@@ -22,5 +22,5 @@ run:
     cd target
     ls -la
     cd ..
-    cp target/springbootsimplerest-0.0.1-SNAPSHOT.jar built-project/
+    cp target/springbootsimplerest-0.0.1-SNAPSHOT.jar /built-project
     ls -la
