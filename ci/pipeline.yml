@@ -18,7 +18,6 @@ jobs:
   plan:
   - {get: SpringBootSimpleRest, trigger: true}
   - task: build
-    privileged: true
     file: SpringBootSimpleRest/ci/build.yml
   - task: build-project
     file: SpringBootSimpleRest/ci/tag-files.yml
