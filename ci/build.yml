@@ -23,5 +23,5 @@ run:
     ls -la
     cd ..
     chmod 777 target
-    cp /target /built-project
+    cp -r /target /built-project
     ls -la
