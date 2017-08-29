@@ -7,7 +7,7 @@ image_resource:
 
 inputs:
 - name: SpringBootSimpleRest
-#- name: built-project
+- name: built-project
 
 run:
   path: bash
